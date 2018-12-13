@@ -1,0 +1,22 @@
+.logoNavBar{
+  width: 40px;
+}
+
+
+#chatBadge{
+  padding: 7px;
+  font-size: 15px;
+  font-family: Helvetica;
+  background-color: #413c58;
+}
+
+.navbar-nav{
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  text-align: center;
+  > li {
+    float: none;
+    display: inline-block;
+  }
+}

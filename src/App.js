@@ -1,28 +1,35 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
-import './App.css';
+import LandingPage from './components/LandingPage.js';
+import About from './components/About.js';
+import Blog from './components/Blog.js';
+import Chat from './components/Chat.js';
+import Consideration from './components/Consideration.js';
+import Gallery from './components/Gallery.js';
+import ProjectGallery from './components/ProjectGallery.js';
+import ProjectDescription from './components/ProjectDescription.js';
+import NavigationBar from './components/NavigationBar.js'
+import { BrowserRouter as Router, Route, Link, Switch } from "react-router-dom";
 
 class App extends Component {
   render() {
     return (
-      <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <p>
-            Edit <code>src/App.js</code> and save to reload.
-          </p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
-        </header>
-      </div>
+        <Router>
+          <div>
+            <Switch>
+              <Route exact path="/" component={NavigationBar} />
+              <Route path="/about" component={About} />
+              <Route path="/blog" component={Blog} />
+              <Route path="/consideration" component={Consideration} />
+              <Route path="/gallery" component={Gallery} />
+              <Route path="/projectGallery" component={ProjectGallery} />
+              <Route path="/projectDescription" component={ProjectDescription} />
+              <Route path="/chat" component={Chat} />
+            </Switch>
+          </div>
+        </Router>
     );
   }
 }
+
 
 export default App;
