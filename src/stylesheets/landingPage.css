@@ -1,0 +1,62 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto+Condensed|Roboto:400,500');
+
+.firstFrame{
+  height: 90vh;
+  background-size:cover;
+  background-image: url("../images/homePhoto3.jpg");
+  display:flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  text-shadow: 2px 2px 4px #000000;
+}
+
+
+.secondFrame{
+  height: 70vh;
+  border-top: 4px solid white;
+  background-size:cover;
+  background: #aedd94; /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #aedd94, #D6FFDC); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #aedd94, #D6FFDC);
+}
+
+#logoStyle{
+  width: 80px;
+  filter : drop-shadow(2px 2px 4px #000000);
+  margin-bottom: 15px;
+}
+
+
+.titleBeProudOfYou{
+  font-family: Roboto Condensed;
+  color: white;
+  font-size: 90px;
+}
+
+.sloganBeProudOfYou{
+  font-family: Roboto;
+  font-weight: 400;
+  color: white;
+  font-size: 24px
+}
+
+.btn-Home-Desc{
+  background-color: hsla(251,19%,29%, 0.9);
+  border-color: #FFFFFF;
+  color: #FFFFFF;
+  margin-top: 30px;
+  font-family: 'Roboto';
+  width: 290px;
+  height: 55px;
+  white-space:normal;
+  border-radius: 15px;
+}
+
+.btn-Home-Desc:hover{
+  background-color: hsla(251,19%,29%, 0.9);
+  border-color: #FFFFFF;
+  color: #FFFFFF;
+  opacity: 0.8;
+}

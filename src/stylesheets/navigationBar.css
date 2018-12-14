@@ -6,8 +6,12 @@
 
 .navBarCss{
   background: #aedd94; /* fallback for old browsers */
-  background: -webkit-linear-gradient(to bottom, #aedd94, ##EAFBEC); /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to bottom, #aedd94, ##EAFBEC);
+  background: -webkit-linear-gradient(to bottom, #aedd94, #D6FFDC); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to bottom, #aedd94, #D6FFDC);
+  position: fixed; /* Set the navbar to fixed position */
+  top: 0; /* Position the navbar at the top of the page */
+  width: 100%; /* Full width */
+  z-index: 9999999;
 }
 
 .plus{
