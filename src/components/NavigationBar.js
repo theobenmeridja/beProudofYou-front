@@ -35,25 +35,25 @@ class NavigationBar extends Component {
       return (
 
         <div>
-          <Navbar style={{opacity:0.8, backgroundColor: "#aedd94"}} light expand="md">
+          <Navbar className="navBarCss" light expand="md">
             <Link to="/"><NavbarBrand><img style={{marginLeft: "20px"}} className="logoNavBar" src={require('../images/logo_blanc_Be_Proud_of_You.png')}  /></NavbarBrand></Link>
             <NavbarToggler onClick={this.toggle} />
           <Collapse isOpen={this.state.isOpen} navbar>
             <Nav className="navbar-nav">
               <NavItem className="navLink">
-                <Link to="/ProjectGallery" style={{color:'#413c58', fontFamily: 'Helvetica', fontWeight: "bold"}}>Contribuer à un projet</Link>
+                <Link to="/ProjectGallery" style={{color:'#413c58', fontFamily: 'Roboto', fontWeight: '500'}}>Contribuer à un projet</Link>
               </NavItem>
               <NavItem className="navLink">
-                <Link to="/Gallery" style={{color:'#413c58', fontFamily: 'Helvetica', fontWeight: "bold"}}>Galerie</Link>
+                <Link to="/Gallery" style={{color:'#413c58', fontFamily: 'Roboto', fontWeight: '500'}}>Galerie</Link>
               </NavItem>
               <NavItem className="navLink">
-                <Link to="/Blog" style={{color:'#413c58', fontFamily: 'Helvetica', fontWeight: "bold"}}>Actu du jour</Link>
+                <Link to="/Blog" style={{color:'#413c58', fontFamily: 'Roboto', fontWeight: '500'}}>Actu du jour</Link>
               </NavItem>
               <NavItem className="navLink">
-                <Link to="/About" style={{color:'#413c58', fontFamily: 'Helvetica', fontWeight: "bold"}}>+ D'infos</Link>
+                <Link to="/About" style={{color:'#413c58', fontFamily: 'Roboto', fontWeight: '500'}}><img className="plus" src={require('../images/plus.svg')}/>{'  '}D'infos</Link>
               </NavItem>
               <NavItem className="navLink">
-                <Link to="/Chat" style={{color:'#413c58', fontFamily: 'Helvetica'}}> <Badge id="chatBadge">Chat</Badge></Link>
+                <Link to="/Chat"> <Badge id="chatBadge">Chat</Badge></Link>
               </NavItem>
             </Nav>
           </Collapse>

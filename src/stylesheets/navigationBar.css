@@ -1,13 +1,28 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto+Condensed|Roboto:400,500');
+
 .logoNavBar{
   width: 40px;
 }
 
+.navBarCss{
+  background: #aedd94; /* fallback for old browsers */
+  background: -webkit-linear-gradient(to bottom, #aedd94, ##EAFBEC); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to bottom, #aedd94, ##EAFBEC);
+}
+
+.plus{
+  width: 17px;
+}
 
 #chatBadge{
-  padding: 7px;
+  padding-bottom: 7px;
+  padding-top: 7px;
+  padding-left: 10px;
+  padding-right: 10px;
   font-size: 15px;
   font-family: Helvetica;
   background-color: #413c58;
+  font-family: Roboto;
 }
 
 .navbar-nav{
