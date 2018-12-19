@@ -13,17 +13,25 @@
 }
 
 
+
 .secondFrame{
-  height: 70vh;
+  height: 50vh;
   border-top: 4px solid white;
   background-size:cover;
   background: #aedd94; /* fallback for old browsers */
   background: -webkit-linear-gradient(to right, #aedd94, #D6FFDC); /* Chrome 10-25, Safari 5.1-6 */
   background: linear-gradient(to right, #aedd94, #D6FFDC);
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.thirdFrame{
+  border-top: 4px solid white;
 }
 
 #logoStyle{
-  width: 80px;
+  width: 13vmin;
   filter : drop-shadow(2px 2px 4px #000000);
   margin-bottom: 15px;
 }
@@ -32,14 +40,14 @@
 .titleBeProudOfYou{
   font-family: Roboto Condensed;
   color: white;
-  font-size: 90px;
+  font-size: 12.5vmin ;
 }
 
 .sloganBeProudOfYou{
   font-family: Roboto;
   font-weight: 400;
   color: white;
-  font-size: 24px
+  font-size: 3.5vmin;
 }
 
 .btn-Home-Desc{
@@ -59,4 +67,124 @@
   border-color: #FFFFFF;
   color: #FFFFFF;
   opacity: 0.8;
+}
+
+.iconPlay{
+  font-size: 13vmin;
+  color: #413c58;
+}
+
+.iconPlay:hover
+{
+        -webkit-animation: swing 1s ease;
+        animation: swing 1s ease;
+        -webkit-animation-iteration-count: 1;
+        animation-iteration-count: 1;
+}
+
+.descText{
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  font-family: Roboto;
+  font-weight: 400;
+  color: #413c58;
+  font-size: 3vmin;
+  margin-bottom: 61px;
+}
+
+.descText1{
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  font-family: Roboto;
+  font-weight: 400;
+  color: #413c58;
+  font-size: 3vmin;
+  margin-bottom: 61px;
+  margin-top:8%;
+}
+
+.slick-prev {
+   left: 3% !important;
+  z-index: 1;
+}
+.slick-next{
+    right: 0;
+}
+
+.cardsDiplay{
+  z-index: 1;
+  margin-bottom: 6vw;
+  margin-right: 6vw;
+  margin-top: 6vw;
+  margin-left:7vw;
+}
+
+
+@-webkit-keyframes swing
+{
+    15%
+    {
+        -webkit-transform: translateX(5px);
+        transform: translateX(5px);
+    }
+    30%
+    {
+        -webkit-transform: translateX(-5px);
+       transform: translateX(-5px);
+    }
+    50%
+    {
+        -webkit-transform: translateX(3px);
+        transform: translateX(3px);
+    }
+    65%
+    {
+        -webkit-transform: translateX(-3px);
+        transform: translateX(-3px);
+    }
+    80%
+    {
+        -webkit-transform: translateX(2px);
+        transform: translateX(2px);
+    }
+    100%
+    {
+        -webkit-transform: translateX(0);
+        transform: translateX(0);
+    }
+}
+@keyframes swing
+{
+    15%
+    {
+        -webkit-transform: translateX(5px);
+        transform: translateX(5px);
+    }
+    30%
+    {
+        -webkit-transform: translateX(-5px);
+        transform: translateX(-5px);
+    }
+    50%
+    {
+        -webkit-transform: translateX(3px);
+        transform: translateX(3px);
+    }
+    65%
+    {
+        -webkit-transform: translateX(-3px);
+        transform: translateX(-3px);
+    }
+    80%
+    {
+        -webkit-transform: translateX(2px);
+        transform: translateX(2px);
+    }
+    100%
+    {
+        -webkit-transform: translateX(0);
+        transform: translateX(0);
+    }
 }
