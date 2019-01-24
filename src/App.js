@@ -3,7 +3,7 @@ import LandingPage from './components/LandingPage.js';
 import About from './components/About.js';
 import Chat from './components/Chat.js';
 import Consideration from './components/Consideration.js';
-import Gallery from './components/Gallery.js';
+import MyGallery from './components/Gallery.js';
 import ProjectGallery from './components/ProjectGallery.js';
 import ProjectDescription from './components/ProjectDescription.js';
 import NavigationBar from './components/NavigationBar.js';
@@ -18,7 +18,7 @@ class App extends Component {
               <Route exact path="/" component={LandingPage} />
               <Route path="/about" component={About} />
               <Route path="/consideration" component={Consideration} />
-              <Route path="/gallery" component={Gallery} />
+              <Route path="/gallery" component={MyGallery} />
               <Route path="/projectGallery" component={ProjectGallery} />
               <Route path="/projectDescription" component={ProjectDescription} />
               <Route path="/chat" component={Chat} />
