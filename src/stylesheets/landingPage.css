@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto+Condensed|Roboto:400,500');
+@import url('https://fonts.googleapis.com/css?family=Roboto+Slab');
 
 .firstFrame{
   height: 90vh;
@@ -38,7 +39,7 @@
 
 
 .titleBeProudOfYou{
-  font-family: Roboto Condensed;
+  font-family: Roboto;
   color: white;
   font-size: 12.5vmin ;
 }
@@ -55,7 +56,7 @@
   border-color: #FFFFFF;
   color: #FFFFFF;
   margin-top: 30px;
-  font-family: 'Roboto';
+  font-family: 'Roboto Slab';
   width: 290px;
   height: 55px;
   white-space:normal;
@@ -86,7 +87,7 @@
   display:flex;
   flex-direction: column;
   justify-content: center;
-  font-family: Roboto;
+  font-family: Roboto Slab;
   font-weight: 400;
   color: #413c58;
   font-size: 3vmin;
@@ -97,7 +98,7 @@
   display:flex;
   flex-direction: column;
   justify-content: center;
-  font-family: Roboto;
+  font-family: Roboto Slab;
   font-weight: 400;
   color: #413c58;
   font-size: 3vmin;

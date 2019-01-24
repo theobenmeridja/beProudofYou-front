@@ -47,7 +47,7 @@ class NavigationBar extends Component {
                 <Link to="/Gallery" style={{color:'#413c58', fontFamily: 'Roboto', fontWeight: '500'}}>Galerie</Link>
               </NavItem>
               <NavItem className="navLink">
-                <Link to="/Blog" style={{color:'#413c58', fontFamily: 'Roboto', fontWeight: '500'}}>Actu du jour</Link>
+                <a style={{color:'#413c58', fontFamily: 'Roboto', fontWeight: '500'}} href="https://beproudofyou.home.blog/" target="_blank">Actu du jour</a>
               </NavItem>
               <NavItem className="navLink">
                 <Link to="/About" style={{color:'#413c58', fontFamily: 'Roboto', fontWeight: '500'}}><img className="plus" src={require('../images/plus.svg')}/>{'  '}D'infos</Link>
