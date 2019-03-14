@@ -18,14 +18,12 @@
   width: 17px;
 }
 
-#chatBadge{
+#applyBadge{
   padding-bottom: 7px;
   padding-top: 7px;
   padding-left: 10px;
   padding-right: 10px;
   font-size: 15px;
-  font-family: Helvetica;
-  background-color: #413c58;
   font-family: Roboto;
 }
 

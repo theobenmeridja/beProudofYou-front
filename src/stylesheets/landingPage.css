@@ -5,6 +5,7 @@
   height: 90vh;
   background-size:cover;
   background-image: url("../images/homePhoto3.jpg");
+  background-position: center;
   display:flex;
   flex-direction: column;
   text-align: center;
@@ -16,7 +17,7 @@
 
 
 .secondFrame{
-  height: 50vh;
+
   border-top: 4px solid white;
   background-size:cover;
   background: #aedd94; /* fallback for old browsers */
@@ -58,7 +59,7 @@
   margin-top: 30px;
   font-family: 'Roboto Slab';
   width: 290px;
-  height: 55px;
+  height: 75px;
   white-space:normal;
   border-radius: 15px;
 }
@@ -71,8 +72,8 @@
 }
 
 .iconPlay{
-  font-size: 13vmin;
   color: #413c58;
+
 }
 
 .iconPlay:hover
@@ -81,6 +82,7 @@
         animation: swing 1s ease;
         -webkit-animation-iteration-count: 1;
         animation-iteration-count: 1;
+
 }
 
 .descText{
@@ -115,13 +117,37 @@
 }
 
 .cardsDiplay{
-  z-index: 1;
+  z-index: 999;
   margin-bottom: 6vw;
   margin-right: 6vw;
   margin-top: 6vw;
   margin-left:7vw;
 }
 
+.projetCard{
+  transition: transform .2s;
+}
+
+.projetCard:hover{
+transform: scale(1.1);
+}
+
+
+.iconHand{
+  color: #413c58;
+}
+
+.iconGift{
+  color: #413c58;
+}
+
+.iconComments{
+  color: #413c58;
+}
+
+.envelope{
+  color: #FFFFFF;
+}
 
 @-webkit-keyframes swing
 {

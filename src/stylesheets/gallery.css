@@ -3,12 +3,15 @@
 @import url('https://fonts.googleapis.com/css?family=Playfair+Display');
 
 
-.Title{
-  font-family: Roboto Slab;
-  margin-top: 80px;
-  font-size: 10.5vmin ;
-  color: #413c58;
+.title{
+  font-family: Roboto ;
+  font-weight: bold;
+  background: #413c58;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
   text-align: center;
+  margin-top: 5vh;
+  margin-bottom: 5vh;
 }
 
 .subtitle1{
@@ -16,4 +19,8 @@
   font-size: 12em;
   color: #413c58;
   text-align: center;
+}
+
+.allPhotos{
+  border-radius: 30px;
 }
