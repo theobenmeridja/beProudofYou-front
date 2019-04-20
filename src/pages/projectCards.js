@@ -1,3 +1,4 @@
+
 import React, { Component } from 'react';
 import '../stylesheets/projectGallery.css';
 import {connect} from 'react-redux';
@@ -19,7 +20,7 @@ class ProjectCards extends Component {
       <div class="card card-cascade narrower">
         <div className="card-image-top" class="view view-cascade overlay">
           <Image class="card-img-top" style={{width: "100%", height: "30vh", objectFit: "cover"}} cloudName="ddjeialc9" publicId={this.props.projectPhoto}  />
-          <a href="!#">
+          <a href="#!">
             <div class="mask rgba-white-slight"></div>
           </a>
         </div>
