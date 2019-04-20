@@ -29,3 +29,10 @@
 #modal{
   text-align: left;
 }
+
+.textBeforePayment{
+  color: red;
+  font-size: 10px;
+  font-family: Roboto;
+  margin-top: 10px;
+}

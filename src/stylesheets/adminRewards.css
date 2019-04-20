@@ -1,0 +1,18 @@
+.rewardsCard{
+  margin-right: 7%;
+  margin-left: 7%;
+  margin-top: 7%;
+  margin-bottom: 7%;
+  padding: 20px;
+  box-sizing:border-box;
+  text-align:  center;
+}
+
+
+.rewardsTitle{
+  color: #FFF;
+}
+
+#modal{
+  text-align: left;
+}

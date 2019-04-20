@@ -5,28 +5,10 @@ import {
   NavbarToggler,
   NavbarBrand,
   Nav,
-  NavItem,
-  NavLink,
-  UncontrolledDropdown,
-  DropdownToggle,
-  DropdownMenu,
-  DropdownItem,
-  Button,
-  Badge} from 'reactstrap';
+  NavItem} from 'reactstrap';
 import '../stylesheets/navigationBar.css';
 import { Link } from "react-router-dom";
 import { MDBBtn,
-         MDBCard,
-         MDBCardBody,
-         MDBCardImage,
-         MDBCardTitle,
-         MDBCardTextMDBCol,
-         MDBContainer,
-         MDBRow,
-         MDBCol,
-         MDBFooter,
-         MDBIcon,
-         MDBCardText,
        } from "mdbreact";
 
 class NavigationBar extends Component {
@@ -49,7 +31,7 @@ class NavigationBar extends Component {
 
         <div>
           <Navbar className="navBarCss" light expand="md">
-            <Link to="/"><NavbarBrand><img style={{marginLeft: "20px"}} className="logoNavBar" src={require('../images/logo_blanc_Be_Proud_of_You.png')}  /></NavbarBrand></Link>
+            <Link to="/"><NavbarBrand><img style={{marginLeft: "20px"}} className="logoNavBar" src={require('../images/logo_blanc_Be_Proud_of_You.png')} alt="logo" /></NavbarBrand></Link>
             <NavbarToggler onClick={this.toggle} />
             <Collapse isOpen={this.state.isOpen} navbar>
               <Nav style={{display:"flex",  alignItems:"center"}} className="navbar-nav">
@@ -60,10 +42,10 @@ class NavigationBar extends Component {
                   <Link to="/Gallery" style={{color:'#413c58', fontFamily: 'Roboto', fontWeight: '500'}}>Galerie</Link>
                 </NavItem>
                 <NavItem className="navLink">
-                  <a style={{color:'#413c58', fontFamily: 'Roboto', fontWeight: '500'}} href="https://beproudofyou.home.blog/" target="_blank">Actu du jour</a>
+                  <a style={{color:'#413c58', fontFamily: 'Roboto', fontWeight: '500'}} href="https://beproudofyou.home.blog/" target="_blank" rel="noopener noreferrer">Actu du jour</a>
                 </NavItem>
                 <NavItem className="navLink">
-                  <Link to="/About" style={{color:'#413c58', fontFamily: 'Roboto', fontWeight: '500'}}><img className="plus" src={require('../images/plus.svg')}/>{'  '}D'infos</Link>
+                  <Link to="/About" style={{color:'#413c58', fontFamily: 'Roboto', fontWeight: '500'}}><img className="plus" src={require('../images/plus.svg')} alt="+"/>{'  '}D'infos</Link>
                 </NavItem>
                 <NavItem className="navLink">
                   <Link to="/postuler"> <MDBBtn gradient="purple"  id="applyBadge">Proposer un projet</MDBBtn></Link>

@@ -1,0 +1,18 @@
+.financing{
+  color: green;
+  font-family: Roboto;
+  font-weight: bold;
+  margin-bottom: 20px
+}
+
+.pending{
+  color: orange;
+  font-family: Roboto;
+  font-weight: bold;
+  margin-bottom: 20px
+}
+
+.buttonProject{
+  margin-top: 10px;
+  margin-bottom: 10px;
+}

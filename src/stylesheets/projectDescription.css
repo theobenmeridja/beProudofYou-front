@@ -1,10 +1,9 @@
 
 
 .headerImg{
-  height: 60vh;
+  height: 90vh;
   background-size:cover;
   background-position: center;
-  background-image: url("../images/homePhoto3.jpg");
   display:flex;
   flex-direction: column;
   text-align:center;
@@ -12,18 +11,22 @@
   justify-content: center;
 }
 
+.headerImg1{
+  width: 100%;
+}
+
 .projectTitle{
   color: #FFFFFF;
   font-family: Roboto;
-  text-shadow: 2px 2px 4px #000000;
-  font-size: 10.5vmin ;;
+  text-shadow: 2px 2px 2px #000000;
+  font-size: 10.5vmin ;
 }
 
 .sector{
   color: #FFFFFF;
   font-family: Roboto;
-  text-shadow: 2px 2px 4px #000000;
-  font-size: 5.5vmin ;;
+  text-shadow: 2px 2px 2px #000000;
+  font-size: 5.5vmin ;
 }
 
 .projectLeaderPhoto{
@@ -190,4 +193,11 @@ font-family: Roboto;
   justify-content: space-around;
   margin-bottom: 25px;
   margin-top: 15px;
+}
+
+.linkIcons{
+  display: flex;
+  justify-content: space-around;
+  margin-right: 25%;
+  margin-left: 25%;
 }

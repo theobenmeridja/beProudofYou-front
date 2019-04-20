@@ -1,0 +1,51 @@
+@import url('https://fonts.googleapis.com/css?family=Actor');
+
+.background {
+  background-image: url("../images/riccardo-annandale-140624-unsplash.jpg");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  height: 80vh;
+}
+
+.allContent{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+
+.signInTitle {
+  color: #FFFFFF;
+  font-family: 'Roboto';
+  font-size: 10vmin;
+  text-shadow: 2px 2px 4px #000000;
+}
+
+
+.signInText {
+  color: #FFFFFF;
+  font-family: 'Roboto';
+}
+
+.form {
+  display: flex;
+  flex-direction:column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 10vh;
+}
+
+#email {
+  margin-top: 35px;
+  width: 40vh;
+  font-family: 'Roboto';
+}
+
+#password {
+  margin-bottom: 35px;
+  margin-top: 20px;
+  width: 40vh;
+  font-family: 'Roboto';
+}

@@ -21,6 +21,14 @@
   text-align: center;
 }
 
-.allPhotos{
-  border-radius: 30px;
+.myPhotos{
+  border-radius: 30%;
+}
+
+.titlePhoto{
+  color: #413c58;
+  text-align: center;
+  font-family: Roboto ;
+  margin-top: 8px;
+  margin-bottom: 10px;
 }

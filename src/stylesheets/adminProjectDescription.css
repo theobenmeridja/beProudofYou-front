@@ -1,0 +1,220 @@
+
+.headerImg{
+  height: 90vh;
+  background-size:cover;
+  background-position: center;
+  display:flex;
+  flex-direction: column;
+  text-align:center;
+  align-items: center;
+  justify-content: center;
+}
+
+.headerImg1{
+  width: 100%;
+}
+
+.projectTitle{
+  color: #FFFFFF;
+  font-family: Roboto;
+  text-shadow: 2px 2px 4px #000000;
+  font-size: 10.5vmin ;
+}
+
+.sector{
+  color: #FFFFFF;
+  font-family: Roboto;
+  text-shadow: 2px 2px 4px #000000;
+  font-size: 5.5vmin ;
+}
+
+.projectLeaderPhoto{
+  height:45vmin ;
+  display:flex;
+  flex-direction: column;
+  float: right;
+  border-radius: 25%;
+}
+
+.contributorsCard{
+  background-color:#fff;
+  border-width:2px;
+  border-radius: 5px;
+  padding: 2%;
+  border-style:solid;
+  border-color:#eee;
+  margin: 7%;
+  box-sizing:border-box;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  box-shadow: 1px 3px 20px #413c58;
+  font-family: Roboto;
+}
+
+.contributorsFeatures{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.moneyGoalPercent{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  font-family: Roboto Slab;
+  font-weight: bold;
+}
+
+#numberContributors{
+  color: #413c58;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+#budgetGoal{
+  color: #413c58;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+
+.siderBar{
+  background: #aedd94; /* fallback for old browsers */
+  background: -webkit-linear-gradient(to bottom, #aedd94, #D6FFDC); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to bottom, #aedd94, #D6FFDC);
+  border-left: solid 4px #413c58;
+  width: 30%;
+}
+
+@media screen and (max-width: 400px) {
+  .siderBar a {
+    text-align: center;
+    float: none;
+  }
+}
+
+.title {
+  margin-top: 100px;
+  font-weight: 400;
+}
+
+.bankcard{
+  height:60px;
+}
+
+.headerModalTitle{
+color: #413c58;
+font-family: Roboto;
+}
+
+.content{
+  padding-left: 7%;
+  padding-right: 7%;
+  padding-top: 3%;
+  padding-bottom: 3%;
+}
+
+.projectStoryTitle{
+  text-align:center;
+  margin-bottom: 4vmin;
+}
+
+.projectGoalTitle{
+  text-align:center;
+  margin-bottom: 4vmin;
+}
+
+.projectActionTitle{
+  text-align:center;
+  margin-bottom: 4vmin;
+}
+
+.budgetAllocationTitle{
+  text-align:center;
+  margin-bottom: 4vmin;
+}
+
+.projectLeaderNameTitle{
+  text-align:center;
+  margin-bottom: 4vmin;
+}
+
+.projectLeaderAmbitionTitle{
+  margin-bottom: 4vmin;
+  text-align: center;
+}
+
+.projectStory{
+  text-align: justify;
+  margin-bottom: 8vmin;
+}
+
+.projectGoal{
+  text-align: justify;
+  margin-bottom: 8vmin;
+
+}
+
+.projectAction{
+  text-align: justify;
+  margin-bottom: 8vmin;
+}
+
+.budgetAllocation{
+  text-align: justify;
+  margin-bottom: 8vmin;
+}
+
+.projectLeaderName{
+  text-align: center;
+  margin-bottom: 2vmin;
+}
+
+.projectLeaderStory{
+  text-align: justify;
+  margin-bottom: 8vmin;
+}
+
+.projectLeaderAmbition{
+  text-align: justify;
+  margin-bottom: 8vmin;
+}
+
+.projectLeaderPhoto{
+  margin-left: 7vmin;
+  margin-right: 7vmin;
+  margin-bottom: 7vmin;
+}
+
+.buttonSwitch{
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 25px;
+  margin-top: 15px;
+}
+
+.projectInfos{
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center
+}
+
+.allInfos{
+  text-align: center;
+  background-color:#fff;
+  border-width:2px;
+  border-radius: 5px;
+  padding: 4%;
+  border-style:solid;
+  border-color:#eee;
+  margin: 7%;
+  box-sizing:border-box;
+  box-shadow: 1px 3px 20px #413c58;
+  font-family: Roboto;
+}
+
+.textInfos{
+  margin-left: 8px
+}

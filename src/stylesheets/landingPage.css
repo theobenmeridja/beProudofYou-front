@@ -4,7 +4,7 @@
 .firstFrame{
   height: 90vh;
   background-size:cover;
-  background-image: url("../images/homePhoto3.jpg");
+  background-image: url("../images/riccardo-annandale-140624-unsplash.jpg");
   background-position: center;
   display:flex;
   flex-direction: column;
@@ -24,8 +24,9 @@
   background: -webkit-linear-gradient(to right, #aedd94, #D6FFDC); /* Chrome 10-25, Safari 5.1-6 */
   background: linear-gradient(to right, #aedd94, #D6FFDC);
   display:flex;
-  flex-direction: column;
+  height: 40vh;
   justify-content: center;
+  align-items: center
 }
 
 .thirdFrame{

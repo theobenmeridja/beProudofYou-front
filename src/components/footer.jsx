@@ -1,20 +1,10 @@
 import React, { Component } from 'react';
 import '../stylesheets/footer.css';
 import { Link } from "react-router-dom";
-import { MDBBtn,
-         MDBCard,
-         MDBCardBody,
-         MDBCardImage,
-         MDBCardTitle,
-         MDBCardTextMDBCol,
-         MDBContainer,
+import { MDBContainer,
          MDBRow,
          MDBCol,
-         MDBFooter,
-         MDBIcon,
-         MDBCardText,
-         MDBInput,
-       } from "mdbreact";
+         MDBFooter } from "mdbreact";
 
 class MyFooter extends Component {
 
@@ -28,16 +18,12 @@ class MyFooter extends Component {
             <MDBRow>
               <MDBCol md="12" className="pt-5 py-4">
                 <div className="mb-5 flex-center">
-                  <a className="fb-ic">
+                  <a className="fb-ic" href="https://www.facebook.com/beproudofyouTogo/" target="blank">
                     <i className="fab fa-facebook-f fa-lg white-text mr-md-5 mr-3 fa-2x">
                     </i>
                   </a>
 
-                  <a className="gplus-ic">
-                    <i className="fab fa-youtube fa-lg white-text mr-md-5 mr-3 fa-2x">
-                    </i>
-                  </a>
-                  <a className="ins-ic">
+                  <a href="https://www.instagram.com/BeProudofYou.Togo/"  className="ins-ic">
                     <i className="fab fa-instagram fa-lg white-text mr-md-5 mr-3 fa-2x">
                     </i>
                   </a>
@@ -50,19 +36,19 @@ class MyFooter extends Component {
             <MDBRow>
               <MDBCol md="12" className="pb-4">
                 <div className="mb-5 text-center">
-                  <a className="fb-ic">
+                  <Link to="/Contact"><a href="!#" className="fb-ic">
                     <p className="fa-lg white-text mr-md-5 mr-3">Contact
                     </p>
-                  </a>
+                  </a></Link>
 
-                  <a className="gplus-ic">
+                  <Link to="mentionslegales" ><a href="!#" className="gplus-ic">
                   <p className="fa-lg white-text mr-md-5 mr-3">Mentions Légales
                   </p>
-                  </a>
-                  <a className="ins-ic">
-                  <p className="fa-lg white-text mr-md-5 mr-3">Conditions d'utilisation
+                  </a></Link>
+                  <Link to="/admin"><a href="!#" className="ins-ic">
+                  <p className="fa-lg white-text mr-md-5 mr-3">Admin
                   </p>
-                  </a>
+                  </a></Link>
 
 
                 </div>

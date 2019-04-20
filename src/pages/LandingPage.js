@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import ModalVideo from 'react-modal-video';
 import '../react-modal-video/scss/modal-video.scss'
 import { Link } from "react-router-dom";
-import {Icon, Button, Row, Col, Card } from "antd";
+import { Button } from "antd";
 import NavigationBar from './NavigationBar.js';
 import Footer from '../components/footer.jsx';
 import {Animated} from "react-animated-css";
@@ -10,26 +10,16 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import '../stylesheets/landingPage.css';
-import { library } from '@fortawesome/fontawesome-svg-core';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faIgloo } from '@fortawesome/free-solid-svg-icons';
 import LeftArrow from '../images/left-arrow.svg';
 import RightArrow from '../images/right-arrow.svg';
 import ScrollAnimation from 'react-animate-on-scroll';
 import ProjectCardsLanding from './ProjectCardsLanding.js';
-import { Motion, spring } from "react-motion";
 import { MDBBtn,
          MDBCard,
          MDBCardBody,
-         MDBCardImage,
-         MDBCardTitle,
-         MDBCardTextMDBCol,
-         MDBContainer,
          MDBRow,
          MDBCol,
-         MDBFooter,
          MDBIcon,
-         MDBCardText,
          MDBInput,
        } from "mdbreact";
 
@@ -42,12 +32,62 @@ class LandingPage extends Component {
       isOpen: false,
       center: [0,20],
       zoom: 1,
+      projectData:[],
+      email: '',
+      subject: '',
+      name:'',
+      textArea:''
     }
     this.openModal = this.openModal.bind(this)
+    this.handleSubmit = this.handleSubmit.bind(this)
+    this.handleChangeEmail = this.handleChangeEmail.bind(this)
+    this.handleChangeSubject = this.handleChangeSubject.bind(this)
+    this.handleChangeName = this.handleChangeName.bind(this)
+    this.handleChangeTextArea = this.handleChangeTextArea.bind(this)
+  }
+
+  handleChangeEmail(event) {
+    this.setState({ email: event.target.value })
+  }
+
+  handleChangeSubject(event) {
+    this.setState({ subject: event.target.value })
+  }
+
+  handleChangeName(event) {
+    this.setState({ name: event.target.value })
+  }
+
+  handleChangeTextArea(event) {
+    this.setState({ textArea: event.target.value })
+  }
+
+  handleSubmit(){
+    fetch('https://beproudofyou-backend.herokuapp.com/sendemail', {
+      method: 'POST',
+      headers: {'Content-Type':'application/x-www-form-urlencoded'},
+      body: 'name='+this.state.name+'&email='+this.state.email+'&subject='+this.state.subject+'&textArea='+this.state.textArea
+    });
   }
 
   openModal () {
     this.setState({isOpen: true})
+  }
+
+  componentDidMount(){
+
+  var ctx = this;
+
+  fetch('https://beproudofyou-backend.herokuapp.com/displayProjects')
+  .then(function(response) {
+    return response.json();
+  })
+  .then(function(data) {
+    ctx.setState({projectData: data.projects});
+  })
+  .catch(function(error) {
+    console.log('Request failed', error)
+  });
   }
 
 
@@ -55,44 +95,9 @@ class LandingPage extends Component {
 
   render() {
 
-    var projectData = [
-      {id : "1",
-        name:"Alex",
-       sector: "Agriculture",
-       description:"L'agriculture (du latin agricultura, composé à partir de ager, champ et colere, cultiver) est un processus par lequel les êtres humains aménagent leurs écosystèmes et contrôlent le cycle biologique d'espèces domestiquées, dans le but de produire des aliments et d'autres ressources utiles à leurs sociétés" },
-
-      {id : "2",
-        name:"Etienne",
-       sector: "Retail",
-       description: "Le commerce de détail est le maillon final de la chaîne de distribution. Il se distingue ainsi du commerce en gros."
-        },
-
-      {id : "3",
-        name:"Philippe",
-       sector: "Transports",
-       description:"Le transport est le déplacement d'objets, de marchandises, ou d'individus d'un endroit à un autre. Les modes de transport incluent l'aviation, le chemin de fer, le transport routier, le transport maritime, le transport par câble, l'acheminement par pipe-line et le transport spatial"},
-
-      {id : "4",
-        name:"Wassima",
-       sector: "Education",
-       description:"L’éducation est étymologiquement :« guider hors de », c'est-à-dire développer, faire produire. Il signifie maintenant plus couramment l'apprentissage et le développement des facultés intellectuelles, morales et physiques, les moyens et les résultats de cette activité de développement"},
-
-       { id : "5",
-         name:"Etienne",
-        sector: "Services",
-        description: "Le commerce de détail est le maillon final de la chaîne de distribution. Il se distingue ainsi du commerce en gros."
-         },
-
-         { id : "6",
-           name:"Moumousse",
-          sector: "Technologie",
-          description: "Le commerce de détail est le maillon final de la chaîne de distribution. Il se distingue ainsi du commerce en gros."
-           },
-
-    ];
 
     function RightNavButton(props) {
-        const {className, style, onClick} = props
+        const { style, onClick} = props
         return (
           <div
             className="slick-arrow"
@@ -107,7 +112,7 @@ class LandingPage extends Component {
 
     const settings = {
       dots: true,
-      infinite: true,
+      infinite: false,
       speed: 500,
       slidesToShow: 3,
       slidesToScroll: 3,
@@ -123,7 +128,7 @@ class LandingPage extends Component {
           settings: {
             slidesToShow: 3,
             slidesToScroll: 3,
-            infinite: true,
+            infinite: false,
             dots: true,
             centerMode: false,
           }
@@ -150,10 +155,11 @@ class LandingPage extends Component {
       ]
     };
 
-    const { Meta } = Card;
-
-    var projectLandingList = projectData.map(function(project, i) {
-     return <ProjectCardsLanding projectId={project.id} projectName={project.name} projectSector={project.sector} description={project.description} projectNumber={i}/>;
+    var ctx = this;
+    var projectLandingList = ctx.state.projectData.map(function(project, i) {
+      if (project.adminAgree === true){
+     return <ProjectCardsLanding key={i} adminAgree={project.adminAgree} projectId={project._id} projectLeaderSurname={project.projectLeaderSurname} projectTitle={project.projectTitle} projectPhoto={project.projectTitle.replace(/\s/g, "")}/>;
+      }
    });
 
     return (
@@ -165,65 +171,24 @@ class LandingPage extends Component {
 
       <div className="firstFrame">
         <Animated animationIn="fadeIn" animationOut="fadeOut" isVisible={true}>
-          <img id="logoStyle" src={require('../images/logo_blanc_Be_Proud_of_You.png')}/>
+          <img id="logoStyle" alt="Logo de Be proud of You" src={require('../images/logo_blanc_Be_Proud_of_You.png')}/>
           <h1 className="titleBeProudOfYou">Be proud of You</h1>
           <h3 className="sloganBeProudOfYou">Soyez fiers d'accompagner nos micro-entrepreneurs</h3>
           <Link to="/About"><Button className="btn-Home-Desc" >Plateforme de dons, à but non lucratif, afin de soutenir la création de valeur au Togo </Button></Link>
         </Animated>
       </div>
 
-      <ModalVideo style={{zIndex: "1"}}channel='youtube' isOpen={this.state.isOpen} videoId='-RDuYrCMCWc' onClose={() => this.setState({isOpen: false})} />
+      <ModalVideo style={{zIndex: "1"}}channel='youtube' isOpen={this.state.isOpen} videoId='Y08npQJU__c' onClose={() => this.setState({isOpen: false})} />
 
       <div className="secondFrame">
+        <h2 style={{marginInlineEnd: "4%", fontSize: "5vmin"}}>Quel est notre but ? </h2>
+        <ScrollAnimation animateIn="fadeInLeft" animateOnce='true'>
 
-        <ScrollAnimation animateIn="fadeInLeft" animateOnce="true">
-          <MDBContainer>
-            <MDBRow style={{display:"flex",  alignItems:"center"}} top="true"> <MDBCol size="3" md="1" className="offset-md-1 mb-4 mt-5">
-              <MDBIcon className="iconHand" size="3x" fixed icon="handshake" />
-            </MDBCol>
+          <div>
+            <MDBIcon size="7x" fixed className="iconPlay" onClick={this.openModal} far icon="play-circle" />
+          </div>
 
-              <MDBCol size="9" md="6" className="mb-4 mt-5">
-                <MDBCard color="#fff8e1 amber lighten-5" text="unique-color-dark" className="text-center">
-                  <MDBCardBody>
-                    Contribuez au développement d'entrepreneurs locaux
-                  </MDBCardBody>
-                </MDBCard>
-              </MDBCol>
-            </MDBRow>
 
-            <MDBRow style={{display:"flex",  alignItems:"center"}} top="true">
-              <MDBCol size="3" md="1" className="offset-md-1 mb-4">
-                <MDBIcon className="iconGift" size="3x" fixed icon="gift" />
-              </MDBCol>
-
-              <MDBCol size="6" md="6" className="mb-4">
-                <MDBCard color="#fff8e1 amber lighten-5" text="unique-color-dark" className="text-center">
-                  <MDBCardBody>
-
-                    Recevez votre contrepartie personnalisée comme lien indélébile de votre action
-                  </MDBCardBody>
-                </MDBCard>
-              </MDBCol>
-
-              <MDBCol size="3" md="2" className="offset-md-2 mb-4">
-                <MDBIcon size="4x" fixed className="iconPlay" onClick={this.openModal} far icon="play-circle" />
-              </MDBCol>
-            </MDBRow>
-
-            <MDBRow style={{display:"flex",  alignItems:"center"}} top="true">
-              <MDBCol size="3" md="1"className="offset-md-1 mb-5">
-                <MDBIcon z-index="1" className="iconComments" size="3x" fixed icon="comments" />
-              </MDBCol>
-
-              <MDBCol size="9" md="6" className="mb-5">
-                <MDBCard color="#fff8e1 amber lighten-5" text="unique-color-dark" className="text-center">
-                  <MDBCardBody>
-                    Suivez quotidiennement l'avancée de leur projet
-                  </MDBCardBody>
-                </MDBCard>
-              </MDBCol>
-            </MDBRow>
-          </MDBContainer>
         </ScrollAnimation>
       </div>
 
@@ -258,45 +223,55 @@ class LandingPage extends Component {
                 <p className="dark-grey-text mt-3">
                   Notre équipe est à votre écoute pour tous besoins d'informations
                 </p>
-                <div className="md-form">
-                  <MDBInput
-                    icon="user"
-                    label="Nom"
-                    iconClass="grey-text"
-                    type="text"
-                    id="form-name"
-                  />
-                </div>
-                <div className="md-form">
-                  <MDBInput
-                    icon="envelope"
-                    label="Email"
-                    iconClass="grey-text"
-                    type="text"
-                    id="form-email"
-                  />
-                </div>
-                <div className="md-form">
-                  <MDBInput
-                    icon="tag"
-                    label="Sujet"
-                    iconClass="grey-text"
-                    type="text"
-                    id="form-subject"
-                  />
-                </div>
-                <div className="md-form">
-                  <MDBInput
-                    icon="pencil-alt"
-                    label="Zone de texte"
-                    iconClass="grey-text"
-                    type="textarea"
-                    id="form-text"
-                  />
-                </div>
-                <div className="text-center">
-                  <MDBBtn color="#1C2331 unique-color-dark">Envoyer</MDBBtn>
-                </div>
+                <form onSubmit={this.handleSubmit}>
+                  <div className="md-form">
+                    <MDBInput
+                      icon="user"
+                      label="Nom"
+                      iconClass="grey-text"
+                      type="text"
+                      id="form-name"
+                      value={this.state.name}
+                      onChange={this.handleChangeName}
+                    />
+                  </div>
+                  <div className="md-form">
+                    <MDBInput
+                      icon="envelope"
+                      label="Email"
+                      iconClass="grey-text"
+                      type="text"
+                      id="form-email"
+                      value={this.state.email}
+                      onChange={this.handleChangeEmail}
+                    />
+                  </div>
+                  <div className="md-form">
+                    <MDBInput
+                      icon="tag"
+                      label="Sujet"
+                      iconClass="grey-text"
+                      type="text"
+                      id="form-subject"
+                      value={this.state.subject}
+                      onChange={this.handleChangeSubject}
+                    />
+                  </div>
+                  <div className="md-form">
+                    <MDBInput
+                      icon="pencil-alt"
+                      label="Zone de texte"
+                      iconClass="grey-text"
+                      type="textarea"
+                      id="form-text"
+                      value={this.state.textArea}
+                      onChange={this.handleChangeTextArea}
+                    />
+                  </div>
+                  <div className="text-center">
+                    <MDBBtn type="submit" color="#1C2331 unique-color-dark">Envoyer</MDBBtn>
+                  </div>
+                </form>
               </MDBCardBody>
             </MDBCard>
           </MDBCol>
@@ -321,22 +296,22 @@ class LandingPage extends Component {
                 <MDBBtn tag="a" floating color="#1C2331 unique-color-dark" className="accent-1">
                   <MDBIcon className="envelope" icon="map-marker-alt" />
                 </MDBBtn>
-                <p>Lomé, 94126</p>
+                <p>Lomé, Adidogomé - Améhomé, Boulevard du 30 août</p>
                 <p className="mb-md-0">Togo</p>
               </MDBCol>
               <MDBCol md="4">
                 <MDBBtn tag="a" floating color="#1C2331 unique-color-dark" className="accent-1">
                   <MDBIcon className="envelope" icon="phone" />
                 </MDBBtn>
-                <p>+33 6 10 73 75 32</p>
-                <p className="mb-md-0">Lun - Ven, 10:00-20:00</p>
+                <p>+228 90 19 05 88</p>
+                <p className="mb-md-0">7J/7, 08:00-22:00</p>
               </MDBCol>
               <MDBCol md="4">
                 <MDBBtn tag="a" floating color="#1C2331 unique-color-dark" className="accent-1">
                   <MDBIcon className="envelope" icon="envelope" />
                 </MDBBtn>
-                <p>beproudofyou@gmail.com</p>
-                <p className="mb-md-0">sale@gmail.com</p>
+                <p>beproudofyoutogo@gmail.com</p>
+
               </MDBCol>
             </MDBRow>
           </MDBCol>
@@ -344,7 +319,7 @@ class LandingPage extends Component {
       </section>
 
       <Footer/>
-      </div>
+    </div>
     )
   }
 }

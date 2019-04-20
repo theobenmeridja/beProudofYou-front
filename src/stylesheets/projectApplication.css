@@ -1,0 +1,25 @@
+.wrapForm{
+  margin-left: 10%;
+  margin-right: 10%;
+  margin-top: 5%;
+  margin-bottom: 5%;
+}
+
+.content{
+  color: #413c58;
+  font-family: Roboto;
+  margin-top: 30px;
+}
+
+.cloudinaryButton{
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-end;
+  margin: 40px;
+  margin-left: 7%;
+}
+
+.paliers{
+  margin-top: 30px;
+  margin-bottom: 10px;
+}
