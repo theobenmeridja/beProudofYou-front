@@ -98,7 +98,7 @@ class Rewards extends Component {
         postalCode: this.state.postalCode
     };
     axios
-        .post("http://localhost:3000/charge", body)
+        .post("https://beproudofyou-backend.herokuapp.com/charge", body)
         .then(response => {
           console.log(response);
           notification.success({
