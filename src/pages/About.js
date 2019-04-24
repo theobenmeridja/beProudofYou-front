@@ -248,7 +248,7 @@ class About extends Component {
                 <p className="grey-text">
                   Entrepreneurs du Monde accompagne l’insertion économique des familles en situation de grande précarité et leur facilite l’accès à des biens et services essentiels. Ainsi, ces familles gagnent en autonomie et améliorent leurs conditions de vie.
                 </p>
-                <a href="https://www.entrepreneursdumonde.org/fr/" target="_blank" rel="noopener noreferrer"><MDBBtn color="indigo" size="sm">
+                <a href="https://www.entrepreneursdumonde.org/fr/pays/togo/" target="_blank" rel="noopener noreferrer"><MDBBtn color="indigo" size="sm">
                   <MDBIcon far icon="clone" className="left" /> Plus d'infos
                 </MDBBtn></a>
               </MDBCardBody>

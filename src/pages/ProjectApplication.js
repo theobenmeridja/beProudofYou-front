@@ -6,6 +6,7 @@ Input, Tooltip, message, notification } from 'antd';
 import 'antd/dist/antd.css';
 import { MDBBtn} from "mdbreact";
 import Footer from '../components/footer.jsx';
+import { Link } from "react-router-dom";
 
 
 const { Option } = Select;
@@ -904,13 +905,16 @@ class Demo extends React.Component {
           </Form>
         </div>
 
-        <Checkbox onChange={this.onChange}>Vous acceptez les CGU de la plateforme Be proud of You ainsi que les conditions précédent, durant et suite au début de votre campagne de financement</Checkbox>
+        <Checkbox className="CGU" onChange={this.onChange}>Vous acceptez les <a target="_blank" href="https://www.docdroid.net/pVXdEKQ/contractbeproudofyou.pdf">CGU</a> de la plateforme Be proud of You décrivant les conditions précédent, durant et suite au début de votre campagne de financement</Checkbox>
+
 
         <Form style={{display:"flex", justifyContent:"center"}}>
           <Form.Item {...formLayout}>
             <MDBBtn  onClick={this.handleSubmit.bind(this)} class="btn btn-light-green waves-effect " htmlType="submit">Envoyer votre proposition de projet</MDBBtn>
           </Form.Item>
         </Form>
+
+
 
         <Footer/>
       </div>

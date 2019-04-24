@@ -9,6 +9,7 @@ import ProjectDescription from './pages/ProjectDescription.js';
 import Admin from './pages/Admin.js';
 import MentionsLegales from './pages/MentionsLegales.js';
 import AdminProjectGallery from './pages/AdminProjectGallery.js';
+import Cgu from './pages/CGU.js';
 import AdminProjectDescription from './pages/AdminProjectDescription.js';
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import projectId from './reducers/passIdClientSide.reducer';
@@ -34,6 +35,7 @@ class App extends Component {
               <Route path="/AdminProjectDescription" component={AdminProjectDescription} />
               <Route path="/Contact" component={Contact} />
               <Route path="/mentionslegales" component={MentionsLegales} />
+              <Route path="/CGU" component={Cgu} />
             </Switch>
           </div>
         </Router>

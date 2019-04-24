@@ -10,17 +10,20 @@
 
 .amount {
   border: none;
-  border-bottom: 1px solid #413c58;
-  box-sizing: content-box;
   background: transparent;
   color: #413c58;
   outline: none;
-  font-size: 130%;
   font-family: Roboto;
   margin-bottom: 10px;
   text-align: right;
 }
 
+.divAmount{
+  border: none;
+  border-bottom: 1px solid #413c58;
+  box-sizing: content-box;
+  text-align: right;
+}
 
 .rewardsTitle{
   color: #FFF;

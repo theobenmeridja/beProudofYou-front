@@ -149,37 +149,43 @@ font-family: Roboto;
 .projectStory{
   text-align: justify;
   margin-bottom: 8vmin;
+  white-space: pre-line;
 }
 
 .projectGoal{
   text-align: justify;
   margin-bottom: 8vmin;
-
+  white-space: pre-line;
 }
 
 .projectAction{
   text-align: justify;
   margin-bottom: 8vmin;
+  white-space: pre-line;
 }
 
 .budgetAllocation{
   text-align: justify;
   margin-bottom: 8vmin;
+  white-space: pre-line;
 }
 
 .projectLeaderName{
   text-align: center;
   margin-bottom: 2vmin;
+  white-space: pre-line;
 }
 
 .projectLeaderStory{
   text-align: justify;
   margin-bottom: 8vmin;
+  white-space: pre-line;
 }
 
 .projectLeaderAmbition{
   text-align: justify;
   margin-bottom: 8vmin;
+  white-space: pre-line;
 }
 
 .projectLeaderPhoto{

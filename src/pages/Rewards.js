@@ -168,7 +168,7 @@ class Rewards extends Component {
           <MDBContainer>
 
             <div>
-              <div>
+              <div className="divAmount">
                 <input
                   className="amount"
                   type= "number"

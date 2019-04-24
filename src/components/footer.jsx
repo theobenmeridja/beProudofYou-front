@@ -40,8 +40,11 @@ class MyFooter extends Component {
                     <p className="fa-lg white-text mr-md-5 mr-3">Contact
                     </p>
                   </a></Link>
-
-                  <Link to="mentionslegales" ><a href="!#" className="gplus-ic">
+                  <Link to="/CGU" ><a href="!#" className="gplus-ic">
+                  <p className="fa-lg white-text mr-md-5 mr-3">CGU
+                  </p>
+                  </a></Link>
+                  <Link to="/mentionslegales" ><a href="!#" className="gplus-ic">
                   <p className="fa-lg white-text mr-md-5 mr-3">Mentions Légales
                   </p>
                   </a></Link>
