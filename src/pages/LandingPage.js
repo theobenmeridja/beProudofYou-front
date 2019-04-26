@@ -158,7 +158,7 @@ class LandingPage extends Component {
     var ctx = this;
     var projectLandingList = ctx.state.projectData.map(function(project, i) {
       if (project.adminAgree === true){
-     return <ProjectCardsLanding key={i} adminAgree={project.adminAgree} projectId={project._id} projectLeaderSurname={project.projectLeaderSurname} projectTitle={project.projectTitle} projectPhoto={project.projectTitle.replace(/\s/g, "")}/>;
+     return <ProjectCardsLanding key={i} adminAgree={project.adminAgree} projectId={project._id} projectLeaderSurname={project.projectLeaderSurname} projectTitle={project.projectTitle} projectPhoto={project.projectTitle.replace(/\s|[()#!?'"$%&*+-.:;<>@_{}€]/g, "")}/>;
       }
    });
 
