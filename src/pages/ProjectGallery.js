@@ -37,7 +37,7 @@ class ProjectGallery extends Component {
 
     var ctx = this;
      var projectList = ctx.state.projectData.map(function(project, i) {
-      return <ProjectCards adminAgree={project.adminAgree} projectId={project._id} projectLeaderSurname={project.projectLeaderSurname} projectTitle={project.projectTitle} projectShortDescription={project.projectShortDescription} projectPhoto={project.projectTitle.replace(/\s/g, "")}/>;
+      return <ProjectCards adminAgree={project.adminAgree} projectId={project._id} projectLeaderSurname={project.projectLeaderSurname} projectTitle={project.projectTitle} projectShortDescription={project.projectShortDescription} projectPhoto={project.projectTitle.replace(/\s|[()#!?'"$%&*+-.:;<>@_{}€]/g, "")}/>;
     });
 
 

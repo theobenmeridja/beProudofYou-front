@@ -49,7 +49,7 @@ class Demo extends React.Component {
               },
        body: JSON.stringify(values)
       })
-    this.props.form.resetFields();
+
     return notification.success({
     duration: 30,
     message: "Votre projet est enregistré",
@@ -69,11 +69,11 @@ class Demo extends React.Component {
 
 
   handleChangeLeaderPhoto(e) {
-    this.setState({photoLeader: e.target.value.replace(/\s/g, "")});
+    this.setState({photoLeader: e.target.value.replace(/\s|[()#!?'"$%&*+-.:;<>@_{}€]/g, "")});
   }
 
   handleChangeProjectPhoto(e) {
-    this.setState({photoProject: e.target.value.replace(/\s/g, "")});
+    this.setState({photoProject: e.target.value.replace(/\s|[()#!?'"$%&*+-.:;<>@_{}€]/g, "")});
   }
 
   normFile = (e) => {
@@ -123,7 +123,7 @@ class Demo extends React.Component {
 
     const { getFieldDecorator } = this.props.form;
     const { formLayout, rewardsLayout} = this.state;
-
+    console.log('la photo du projet', this.state.photoProject)
 
     return (
       <div>

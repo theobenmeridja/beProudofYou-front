@@ -71,7 +71,7 @@ class ProjectDescription extends Component {
     let details = {};
     for (let i = 0; i < ctx.state.projectData.length; i++ ) {
       if (ctx.state.projectData[i]._id === this.props.projectId ) {
-        details = { _id: ctx.state.projectData[i]._id, leaderPhoto: ctx.state.projectData[i].projectLeaderName.replace(/\s/g, ""), projectTitle: ctx.state.projectData[i].projectTitle, sector: ctx.state.projectData[i].sector, projectLeaderName: ctx.state.projectData[i].projectLeaderName, projectLeaderSurname: ctx.state.projectData[i].projectLeaderSurname, projectPhoto: ctx.state.projectData[i].projectTitle.replace(/\s/g, ""), projectGoal: ctx.state.projectData[i].projectGoal, projectStory: ctx.state.projectData[i].projectStory, projectAction: ctx.state.projectData[i].projectAction, budgetAllocation: ctx.state.projectData[i].budgetAllocation, projectLeaderStory: ctx.state.projectData[i].projectLeaderStory, projectLeaderAmbition: ctx.state.projectData[i].projectLeaderAmbition, budgetGoal: Math.round(ctx.state.projectData[i].budgetGoal/655.95), contributors: ctx.state.projectData[i].contributors, currentAmount:ctx.state.projectData[i].currentAmount, facebookLink:ctx.state.projectData[i].facebookLink,
+        details = { _id: ctx.state.projectData[i]._id, leaderPhoto: ctx.state.projectData[i].projectLeaderName.replace(/\s|[()#!?'"$%&*+-.:;<>@_{}€]/g, ""), projectTitle: ctx.state.projectData[i].projectTitle, sector: ctx.state.projectData[i].sector, projectLeaderName: ctx.state.projectData[i].projectLeaderName, projectLeaderSurname: ctx.state.projectData[i].projectLeaderSurname, projectPhoto: ctx.state.projectData[i].projectTitle.replace(/\s|[()#!?'"$%&*+-.:;<>@_{}€]/g, ""), projectGoal: ctx.state.projectData[i].projectGoal, projectStory: ctx.state.projectData[i].projectStory, projectAction: ctx.state.projectData[i].projectAction, budgetAllocation: ctx.state.projectData[i].budgetAllocation, projectLeaderStory: ctx.state.projectData[i].projectLeaderStory, projectLeaderAmbition: ctx.state.projectData[i].projectLeaderAmbition, budgetGoal: Math.round(ctx.state.projectData[i].budgetGoal/655.95), contributors: ctx.state.projectData[i].contributors, currentAmount:ctx.state.projectData[i].currentAmount, facebookLink:ctx.state.projectData[i].facebookLink,
       instagramLink: ctx.state.projectData[i].instagramLink, websiteLink:ctx.state.projectData[i].websiteLink }
 
 
@@ -81,6 +81,7 @@ class ProjectDescription extends Component {
       }
     }
 
+    console.log("detailsphoto", details.projectPhoto)
 
     return (
     <div>

@@ -40,7 +40,7 @@ class AdminProjectGallery extends Component {
 
       var ctx = this;
      var projectList = ctx.state.projectData.map(function(project, i) {
-      return <AdminProjectCards projectLeaderStory={project.projectLeaderStory}  budgetAllocation={project.budgetAllocation} budgetGoal={project.budgetGoal} projectAction={project.projectAction} projectLeaderAmbition={project.projectLeaderAmbition}   adminAgree={project.adminAgree} projectStory={project.projectStory} projectId={project._id} projectLeaderSurname={project.projectLeaderSurname} projectTitle={project.projectTitle} projectShortDescription={project.projectShortDescription} projectPhoto={project.projectTitle.replace(/\s/g, "")}/>;
+      return <AdminProjectCards projectLeaderStory={project.projectLeaderStory}  budgetAllocation={project.budgetAllocation} budgetGoal={project.budgetGoal} projectAction={project.projectAction} projectLeaderAmbition={project.projectLeaderAmbition}   adminAgree={project.adminAgree} projectStory={project.projectStory} projectId={project._id} projectLeaderSurname={project.projectLeaderSurname} projectTitle={project.projectTitle} projectShortDescription={project.projectShortDescription} projectPhoto={project.projectTitle.replace(/\s|[()#!?'"$%&*+-.:;<>@_{}€]/g, "")}/>;
     });
 
 
