@@ -178,7 +178,7 @@ class LandingPage extends Component {
         </Animated>
       </div>
 
-      <ModalVideo style={{zIndex: "1"}}channel='youtube' isOpen={this.state.isOpen} videoId='cvGzAElFL2k' onClose={() => this.setState({isOpen: false})} />
+      <ModalVideo style={{zIndex: "1"}}channel='youtube' isOpen={this.state.isOpen} videoId='uv9qBOtVOPg' onClose={() => this.setState({isOpen: false})} />
 
       <div className="secondFrame">
         <h2 style={{marginInlineEnd: "4%", fontSize: "5vmin"}}>Quel est notre but ? </h2>
@@ -203,7 +203,7 @@ class LandingPage extends Component {
 
       <section className="my-5">
         <h2 className="h1-responsive font-weight-bold text-center my-5">
-          Contactez nous
+          Contactez - nous
         </h2>
         <p className="text-center w-responsive mx-auto pb-5">
           Vous êtes micro-entrepreneur et vous voulez nous soumettre votre projet ? Vous êtes donateurs et vous souhaitez des nouvelles du projet que vous avez soutenu ? Be proud of You est à votre écoute et répondre au mieux à vos questions. N'hésitez surtout pas !
@@ -216,12 +216,12 @@ class LandingPage extends Component {
 
                 <MDBCard color="#1C2331 unique-color-dark" text="white" className="white-text mt-2 text-center">
                   <MDBCardBody style={{ fontSize:"25px"}}>
-                    <MDBIcon size="1x" className="envelope" icon="envelope" />Ecrivez-nous
+                    <MDBIcon size="1x" className="envelope" icon="envelope" />Ecrivez - nous
                   </MDBCardBody>
                 </MDBCard>
 
                 <p className="dark-grey-text mt-3">
-                  Notre équipe est à votre écoute pour tous besoins d'informations
+                  Notre équipe est à votre écoute pour tout besoins d'informations
                 </p>
                 <form onSubmit={this.handleSubmit}>
                   <div className="md-form">
@@ -296,7 +296,7 @@ class LandingPage extends Component {
                 <MDBBtn tag="a" floating color="#1C2331 unique-color-dark" className="accent-1">
                   <MDBIcon className="envelope" icon="map-marker-alt" />
                 </MDBBtn>
-                <p>Lomé, Adidogomé - Améhomé, Boulevard du 30 août</p>
+                <p>Lomé, Adidogomé - Amadahomé, Boulevard du 30 août</p>
                 <p className="mb-md-0">Togo</p>
               </MDBCol>
               <MDBCol md="4">

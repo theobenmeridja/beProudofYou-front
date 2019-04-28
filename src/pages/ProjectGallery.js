@@ -48,10 +48,10 @@ class ProjectGallery extends Component {
       <section className="text-center my-5">
         <ScrollAnimation animateIn="rotateInDownLeft" animateOnce="true">
           <h2 style={{color:"#413c58"}} className="h1-responsive font-weight-bold my-5">
-            Les projets des micro entrepreneurs
+            Les projets des micro-entrepreneurs
           </h2>
           <p style={{paddingLeft:"10px", paddingRight:"10px"}} className="lead grey-text w-responsive mx-auto mb-5">
-            Be proud of You est un projet associatif, sans but lucratif, soutenu par l'association Voisins Solidaires Togo ayant pour but de financer des micro entrepreneurs du secteur informel au Togo. Nous souhaitons casser les barrières d'accès au financement omniprésentes au Togo. L'ensemble des dons servent à financer l'entrepreneur et à vous envoyer votre contrepartie.
+            Be proud of You est un projet associatif, sans but lucratif, soutenu par l'association Voisins Solidaires Togo ayant pour but de financer des micro entrepreneurs du secteur informel au Togo. Nous souhaitons casser les barrières d'accès au financement omniprésentes au Togo. L'ensemble des dons servent à financer l'entrepreneur et à vous envoyer votre contrepartie
           </p>
         </ScrollAnimation>
 
@@ -75,7 +75,7 @@ class ProjectGallery extends Component {
               <MDBIcon icon="gift" size="3x" className="orange-text" />
               <h5 style={{color:"#413c58"}} className="font-weight-bold my-4">Contrepartie</h5>
               <p className="grey-text  mb-md-0 mb-5">
-                Recevez une contrepartie personalisé, proposée par l'entrepreneur soutenu ,en guise de remerciement. Vous pourrez d'ailleurs suivre ses avancées via notre blog
+                Recevez une contrepartie personnalisée, proposée par l'entrepreneur soutenu, en guise de remerciement. Vous pourrez d'ailleurs suivre ses avancées via notre blog
               </p>
             </MDBCol>
           </MDBRow>

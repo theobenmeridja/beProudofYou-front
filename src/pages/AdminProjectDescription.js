@@ -113,7 +113,7 @@ class AdminProjectDescription extends Component {
             projectPhoto: project.projectTitle.replace(/\s|[()#!?'"$%&*+-.:;<>@_{}€]/g, ""),
             leaderPhoto: project.projectLeaderName.replace(/\s|[()#!?'"$%&*+-.:;<>@_{}€]/g, ""),
             sector: project.sector,
-            budgetGoal: project.budgetGoal,
+            budgetGoal: Math.round(project.budgetGoal/655.95),
             contributors: project.contributors,
             currentAmount: project.currentAmount,
             projectLeaderEmail: project.projectLeaderEmail,

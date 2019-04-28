@@ -157,7 +157,7 @@ import { MDBBtn,
                          <MDBBtn tag="a" floating color="#1C2331 unique-color-dark" className="accent-1">
                            <MDBIcon className="envelope" icon="map-marker-alt" />
                          </MDBBtn>
-                         <p>Lomé, Adidogomé - Améhomé, Boulevard du 30 août</p>
+                         <p>Lomé, Adidogomé - Amadahomé, Boulevard du 30 août</p>
                          <p className="mb-md-0">Togo</p>
                        </MDBCol>
                        <MDBCol md="4">

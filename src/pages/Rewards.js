@@ -232,7 +232,7 @@ class Rewards extends Component {
                     amount={this.state.amount*100} //Amount in cents $9.99
                     currency="EUR"
                     token={onToken}
-                    stripeKey="pk_test_e19w8aHEETO7Za1SrPDjXc3L">
+                    stripeKey="pk_live_opxy3rQrTFp2znajHcXgzsLN">
                     <MDBBtn gradient="purple">
                       Paiement
                     </MDBBtn>

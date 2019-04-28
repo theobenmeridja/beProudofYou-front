@@ -156,12 +156,12 @@ class About extends Component {
                   <strong>Solidarité internationale</strong>
                 </h3>
                 <p>
-                  <span style={{fontWeight:"bold"}}>-</span>Le projet <span style={{fontWeight:"bold"}}>« COUPEabilité – Coupe Menstruelle pour la Femme »</span> a pour objectif de conforter le pouvoir et la force des femmes, dans un contexte d’autonomisation de la femme au Togo. Le but est de sensibiliser sur d'autres alternatives à la gestion de l'hygiène menstruelle plus économiques, plus écologiques et meilleur pour la santé, afin que les femmes puissent choisir en totale liberté ses produits hygiéniques et en parler plus librement.
+                  <span style={{fontWeight:"bold"}}>-</span>Le projet <span style={{fontWeight:"bold"}}>« COUPEabilité – Coupe Menstruelle pour la Femme »</span> a pour objectif de conforter le pouvoir et la force des femmes, dans un contexte d’autonomisation de la femme au Togo. Le but est de sensibiliser sur d'autres alternatives à la gestion de l'hygiène menstruelle plus économiques, plus écologiques et meilleures pour la santé, afin que les femmes puissent choisir en totale liberté leurs produits hygiéniques et en parler plus librement.
                 </p>
 
                 <p>
-                  <span style={{fontWeight:"bold"}}>-</span>Le projet <span style={{fontWeight:"bold"}}>Go Togo</span> a pour objectif de construire de nouveaux bâtiments sanitaires et d'installer des équipements dans des unités de soins périphériques de différents quarties de Lomé.
-                  En 2016 et 2017, l'USP de Segbé s'est vu construitre et équiper un laboratoire d'analyse, une salle de travail pour l'accouchement, une salle suite de couche et une salle de soins.
+                  <span style={{fontWeight:"bold"}}>-</span>Le projet <span style={{fontWeight:"bold"}}>Go Togo</span> a pour objectif de construire de nouveaux bâtiments sanitaires et d'installer des équipements dans des unités de soins périphériques (USP) de différents quartiers de Lomé.
+                  En 2016 et 2017, l'USP de Segbé s'est vue construitre et équiper un laboratoire d'analyse, une salle de travail pour l'accouchement, une salle suite de couche et une salle de soins.
                   En 2019, le projet  <span style={{fontWeight:"bold"}}>Dev & Go</span> l'USP de Dévégo se verra aussi équipé de ces infrastructures.
                 </p>
                 <MDBBtn href="http://www.voisinsolidairetogo.org/" target="_blank" color="indigo" size="md" className="waves-light ">
@@ -179,7 +179,7 @@ class About extends Component {
             Nos partenaires
           </h2>
           <p className="grey-text w-responsive mx-auto mb-5">
-            C'est grâce à nos partenaires que nos actions sont réalisables. Aussi bien comme appui local de nos initiatives ou bien soutient à l'international, ils contribuent à la réussite de Be proud of You.
+            C'est grâce à nos partenaires que nos actions sont réalisables. Aussi bien comme appui local de nos initiatives ou bien soutien à l'international, ils contribuent à la réussite de Be proud of You.
             Ils nous permettent de dénicher les entrepreneurs motivés, les sensibilisent à notre outil et communiquent autour de leur projet pour que leur campagne de financement aboutisse.
           </p>
 
@@ -219,9 +219,9 @@ class About extends Component {
                 </a>
               </MDBView>
               <MDBCardBody className="pb-0">
-                <h4 className="font-weight-bold my-3">Devenir partenaires ?</h4>
+                <h4 className="font-weight-bold my-3">Devenir partenaire ?</h4>
                 <p className="grey-text">
-                  Pour devenir partenaires de nos actions, moral, matériel ou technique, n'hésitez pas à nous contacter dans notre rubrique "Contact". Toute aides est la bienvenue pour faire connaitre davantage les projets de nos entrepreneurs
+                  Pour devenir partenaire de nos actions, moral, matériel ou technique, n'hésitez pas à nous contacter dans notre rubrique "Contact". Toute aide est la bienvenue pour faire connaitre davantage les projets de nos entrepreneurs
                 </p>
                 <Link to="/Contact">
                   <MDBBtn color="indigo" size="sm">
@@ -266,7 +266,7 @@ class About extends Component {
               Notre équipe
             </h2>
             <p className="grey-text w-responsive mx-auto mb-5">
-              L'association Voisins Solidaires Togo compte plus de 20 membres actifs travaillant toute l'année pour le dévellopement des projets locaux. Ils acceuillent chaque année depuis près de 10 ans, des volontaires du monde entier pour dévelloper des projets à forte valeur ajoutée.
+              L'association Voisins Solidaires Togo compte plus de 20 membres actifs travaillant toute l'année pour le développement des projets locaux. Ils acceuillent chaque année depuis près de 10 ans, des volontaires du monde entier pour développer des projets à forte valeur ajoutée.
             </p>
             <MDBRow className="text-md-left">
               <MDBCol lg="6" md="12" className="mb-5">
@@ -364,7 +364,7 @@ class About extends Component {
                     Vice-Président de Voisins Solidaires Togo
                   </h6>
                   <p className="grey-text">
-                    J'intervient dans le monitoring des activités de l'association. J'analyse le sérieux des projets présentés avant le début de leur campagne de financement
+                    J'interviens dans le monitoring des activités de l'association. J'analyse le sérieux des projets présentés avant le début de leur campagne de financement
                   </p>
                   <p style={{fontSize:"15px"}}  className="p-2 fa-lg gplus-ic">
                     <MDBIcon fab icon="whatsapp" /> +228 90 90 58 53
