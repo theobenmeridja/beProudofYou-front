@@ -47,8 +47,10 @@ class AdminProjectGallery extends Component {
 
     return (
     <div style={{fontFamily: 'Roboto'}}>
-      <NavigationBar style={{marginBottom: "110px"}} />
-
+      <div style={{marginBottom: "110px"}}>
+        <NavigationBar style={{marginBottom: "110px"}} />
+      </div>
+      
       <section className="text-center my-5">
         <h2 style={{color:"#413c58"}} className="h1-responsive font-weight-bold my-5">
           Liste de tous les projets proposés

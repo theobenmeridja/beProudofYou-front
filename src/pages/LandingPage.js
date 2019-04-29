@@ -178,7 +178,7 @@ class LandingPage extends Component {
         </Animated>
       </div>
 
-      <ModalVideo style={{zIndex: "1"}}channel='youtube' isOpen={this.state.isOpen} videoId='uv9qBOtVOPg' onClose={() => this.setState({isOpen: false})} />
+      <ModalVideo style={{zIndex: "1"}}channel='youtube' isOpen={this.state.isOpen} videoId='z697nZO2G0g' onClose={() => this.setState({isOpen: false})} />
 
       <div className="secondFrame">
         <h2 style={{marginInlineEnd: "4%", fontSize: "5vmin", color:"#413c58"}}>Quel est notre but ? </h2>
