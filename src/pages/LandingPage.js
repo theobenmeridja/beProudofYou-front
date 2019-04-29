@@ -181,7 +181,7 @@ class LandingPage extends Component {
       <ModalVideo style={{zIndex: "1"}}channel='youtube' isOpen={this.state.isOpen} videoId='uv9qBOtVOPg' onClose={() => this.setState({isOpen: false})} />
 
       <div className="secondFrame">
-        <h2 style={{marginInlineEnd: "4%", fontSize: "5vmin"}}>Quel est notre but ? </h2>
+        <h2 style={{marginInlineEnd: "4%", fontSize: "5vmin", color:"#413c58"}}>Quel est notre but ? </h2>
         <ScrollAnimation animateIn="fadeInLeft" animateOnce='true'>
 
           <div>
