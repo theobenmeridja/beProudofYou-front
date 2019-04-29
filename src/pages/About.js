@@ -45,7 +45,7 @@ class About extends Component {
 
 
       <div>
-        <section style={{marginTop: "90px"}} className=" px-5 pb-5">
+        <section style={{marginTop: "70px"}} className=" px-5 pb-5">
           <MDBCardBody>
             <h2 style={{color: "#413c58"}} className="h1-responsive font-weight-bold text-center my-5">
               Quelles sont nos actions ?
