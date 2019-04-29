@@ -127,7 +127,7 @@ class Demo extends React.Component {
 
     return (
       <div style={{fontFamily: 'Roboto'}}>
-        <NavigationBar/>
+        <NavigationBar style={{marginBottom: "110px"}}/>
         <div style={{marginTop: "110px"}} style={{ textAlign:"center"}}>
           <h2 style={{color:"#413c58"}} className="h1-responsive font-weight-bold my-5">
             Faites financer votre projet !

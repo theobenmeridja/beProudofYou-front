@@ -46,7 +46,7 @@ export default class MyGallery extends React.Component {
   	return (
       <div>
         <div>
-          <NavigationBar/>
+          <NavigationBar style={{marginBottom: "110px"}}/>
         </div>
 
         <div>

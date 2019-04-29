@@ -57,12 +57,12 @@ import { MDBBtn,
 
            return (
              <div style={{fontFamily: 'Roboto'}}>
-               <div>
-                 <NavigationBar/>
+               <div style={{marginBottom: "110px"}}>
+                 <NavigationBar />
                </div>
 
 
-               <section style={{marginTop: "110px"}} className="my-5">
+               <section className="my-5">
                  <h2 className="h1-responsive font-weight-bold text-center my-5">
                    Contactez nous
                  </h2>
