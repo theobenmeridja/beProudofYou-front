@@ -201,7 +201,7 @@ class LandingPage extends Component {
       </div>
 
 
-      <section className="my-5">
+      <section style={{fontFamily:'Roboto'}} className="my-5">
         <h2 className="h1-responsive font-weight-bold text-center my-5">
           Contactez - nous
         </h2>
