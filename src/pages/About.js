@@ -47,7 +47,7 @@ class About extends Component {
       <div>
         <section className=" px-5 pb-5">
           <MDBCardBody>
-            <h2 className="h1-responsive font-weight-bold text-center my-5">
+            <h2 style={{color: "#413c58"}} className="h1-responsive font-weight-bold text-center my-5">
               Quelles sont nos actions ?
             </h2>
             <p className="text-center grey-text w-responsive mx-auto mb-5">
