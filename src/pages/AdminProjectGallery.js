@@ -46,7 +46,7 @@ class AdminProjectGallery extends Component {
 
 
     return (
-    <div>
+    <div style={{fontFamily: 'Roboto'}}>
       <NavigationBar/>
 
       <section className="text-center my-5">

@@ -56,7 +56,7 @@ import { MDBBtn,
         render() {
 
            return (
-             <div>
+             <div style={{fontFamily: 'Roboto'}}>
                <div>
                  <NavigationBar/>
                </div>

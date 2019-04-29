@@ -72,7 +72,7 @@ handleClickSignIn(event) {
 
     return (
 
-<div >
+<div style={{fontFamily: 'Roboto'}} >
   {
     this.state.redirectProjectGallery
       ?<Redirect to="/adminProjectGallery"/>

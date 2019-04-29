@@ -126,7 +126,7 @@ class Demo extends React.Component {
     console.log('la photo du projet', this.state.photoProject)
 
     return (
-      <div>
+      <div style={{fontFamily: 'Roboto'}}>
         <NavigationBar/>
         <div style={{ textAlign:"center"}}>
           <h2 style={{color:"#413c58"}} className="h1-responsive font-weight-bold my-5">

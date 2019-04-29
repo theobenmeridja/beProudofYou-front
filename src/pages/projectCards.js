@@ -16,7 +16,7 @@ class ProjectCards extends Component {
 
 <>
   { this.props.adminAgree ?
-    <div class="col-lg-4 col-md-12 mb-4">
+    <div style={{fontFamily: 'Roboto'}} class="col-lg-4 col-md-12 mb-4">
       <div class="card card-cascade narrower">
         <div className="card-image-top" class="view view-cascade overlay">
           <Image class="card-img-top" style={{width: "100%", height: "30vh", objectFit: "cover"}} cloudName="ddjeialc9" publicId={this.props.projectPhoto}  />

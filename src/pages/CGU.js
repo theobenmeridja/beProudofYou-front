@@ -15,7 +15,7 @@ class Cgu extends React.Component {
     return (
 
 
-  <div>
+  <div style={{fontFamily: 'Roboto'}}>
     <div>
       <NavigationBar/>
     </div>

@@ -72,7 +72,7 @@ class AdminProjectCards extends Component {
 
     return (
 
-      <div class="col-lg-4 col-md-12 mb-4">
+      <div style={{fontFamily: 'Roboto'}} class="col-lg-4 col-md-12 mb-4">
         { this.state.displayButton ?
           <h4 className="financing">En cours de financement</h4> :
           <h4 className="pending">En attente d'acceptation</h4> }
