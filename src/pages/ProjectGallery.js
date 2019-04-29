@@ -43,8 +43,10 @@ class ProjectGallery extends Component {
 
     return (
     <div style={{fontFamily: 'Roboto'}}>
-      <NavigationBar style={{marginBottom: "110px"}}/>
-
+    <div style={{marginBottom: "110px"}}>
+      <NavigationBar/>
+    </div>
+    
       <section className="text-center my-5">
         <ScrollAnimation animateIn="rotateInDownLeft" animateOnce="true">
           <h2 style={{color:"#413c58"}} className="h1-responsive font-weight-bold my-5">
