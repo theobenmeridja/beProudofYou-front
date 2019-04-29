@@ -114,7 +114,7 @@ export default class MyGallery extends React.Component {
 
       const PHOTO_SET = [
         {
-          src: 'https://res.cloudinary.com/ddjeialc9/image/upload/'+this.props.projectPhoto.replace(/\s/g, "")+'.jpg',
+          src: 'https://res.cloudinary.com/ddjeialc9/image/upload/'+this.props.projectPhoto.replace(/\s|[()#!?'"$%&*+-.:;<>@_{}€]/g, "")+'.jpg',
           width: 4,
           height: 3,
         },

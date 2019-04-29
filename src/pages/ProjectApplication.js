@@ -86,7 +86,7 @@ class Demo extends React.Component {
 
 
   uploadWidgetLeader() {
-        window.cloudinary.openUploadWidget({ cloud_name: 'ddjeialc9', public_id: this.state.photoLeader , upload_preset: 'default_preset', tags:['entrepreneurs'], sources: [ 'local']},
+        window.cloudinary.openUploadWidget({ cloud_name: 'ddjeialc9', public_id: this.state.photoLeader , upload_preset: 'project_leader', tags:['entrepreneurs'], sources: [ 'local']},
         function(error, result) {
             console.log(result);
             if (result =! error) {
@@ -99,7 +99,7 @@ class Demo extends React.Component {
       }
 
   uploadWidgetProject() {
-        window.cloudinary.openUploadWidget({ cloud_name: 'ddjeialc9', public_id: this.state.photoProject , upload_preset: 'default_preset', tags:['project'], sources: [ 'local']},
+        window.cloudinary.openUploadWidget({ cloud_name: 'ddjeialc9', public_id: this.state.photoProject , upload_preset: 'project_title', tags:['project'], sources: [ 'local']},
 
         function(error, result) {
             console.log(result);
