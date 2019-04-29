@@ -12,7 +12,6 @@
   top: 0; /* Position the navbar at the top of the page */
   width: 100%; /* Full width */
   z-index: 999;
-  margin-bottom: 110px;
 }
 
 .plus{

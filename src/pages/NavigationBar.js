@@ -29,7 +29,7 @@ class NavigationBar extends Component {
 
       return (
 
-        <div>
+        <div style={{marginBottom:"110px"}}>
           <Navbar className="navBarCss" light expand="md">
             <Link to="/"><NavbarBrand><img style={{marginLeft: "20px"}} className="logoNavBar" src={require('../images/logo_blanc_Be_Proud_of_You.png')} alt="logo" /></NavbarBrand></Link>
             <NavbarToggler onClick={this.toggle} />
