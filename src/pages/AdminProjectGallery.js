@@ -49,7 +49,7 @@ class AdminProjectGallery extends Component {
     <div style={{fontFamily: 'Roboto'}}>
       <NavigationBar/>
 
-      <section className="text-center my-5">
+      <section style={{marginTop: "110px"}} className="text-center my-5">
         <h2 style={{color:"#413c58"}} className="h1-responsive font-weight-bold my-5">
           Liste de tous les projets proposés
         </h2>

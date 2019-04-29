@@ -45,7 +45,7 @@ class ProjectGallery extends Component {
     <div style={{fontFamily: 'Roboto'}}>
       <NavigationBar/>
 
-      <section className="text-center my-5">
+      <section style={{marginTop: "110px"}} className="text-center my-5">
         <ScrollAnimation animateIn="rotateInDownLeft" animateOnce="true">
           <h2 style={{color:"#413c58"}} className="h1-responsive font-weight-bold my-5">
             Les projets des micro-entrepreneurs

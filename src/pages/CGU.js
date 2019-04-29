@@ -20,7 +20,7 @@ class Cgu extends React.Component {
       <NavigationBar/>
     </div>
 
-    <div>
+    <div style={{marginTop: "110px"}}>
       <h3 style={{color:"#413c58", textAlign:"center"}} className="h1-responsive font-weight-bold my-5">
         Retrouver nos conditions générales d'utilisation destinées aux entrepreneurs
       </h3>

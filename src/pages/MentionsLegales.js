@@ -15,7 +15,7 @@ class MentionsLegales extends Component {
           <NavigationBar/>
         </div>
 
-        <div className="mentionsContent">
+        <div style={{marginTop: "110px"}}className="mentionsContent">
 
           <h1 style={{textAlign:"center"}}>Informations légales</h1>
           <h3 className="title">1. Présentation du site.</h3>
